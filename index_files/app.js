@@ -239,54 +239,19 @@ resizeImage();
 var swiper = new Swiper('.swiper-container', {
       slidesPerView: 'auto',
       spaceBetween: 10,
-//      mousewheel:true,
-
-/*
-      scrollbar: {
-        el: '.swiper-scrollbar',
-        hide: false,
-      },
-*/
-
-
-/*
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-
-      },
-*/
-
+	  autoplay: {
+		  delay: 5000,
+	  },
       navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
       },
-
     });
     var swiper2 = new Swiper('.swiper-container', {
       slidesPerView: 'auto',
       spaceBetween: 10,
-
       scrollbar: {
         el: '.swiper-scrollbar',
         hide: false,
       },
-
-
-
-/*
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-
-      },
-*/
-
-/*
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
-*/
-
     });

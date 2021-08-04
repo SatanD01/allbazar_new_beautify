@@ -1,0 +1,666 @@
+1) создал файлы new.css new.js и подключил к файлу
+2) поменял местами кнопку заказ в телеграм и текст рядом
+3) для кнопки телеграма добавил класс tg-button
+4) каталог товаров переместил до блока поиска
+<div class="col-md-2 col-2">
+    <div class="d-flex">
+        <div class="d-none d-lg-block d-xl-block py-2">
+            <a href="https://allbazar.top/cat/" class="mr-3"><i class="fa fa-th-large"></i> Каталог товаров</a>
+        </div>
+    </div>
+</div>
+5) кнлпки входа и корзины поставил после блока оплата и доставка
+6) для кнопки входа поставил кнопку ml-auto py-2 mr-3
+7) для блока корзины добавил класс mr-3
+8) кнопку меню перенес в head-line
+9) кнопку со сменой языка перенес в head-line
+10) кнопку входа перенес в header-menu
+11) кнопку каталог перенес к началу блока, до поиска
+12) в head-line до меню создал копку карзины отличие от старого добавлен новый класс headBasket-mb d-lg-none
+<a href="https://allbazar.top/cart/" class="ml-3 mr-3 headBasket headBasket-mb d-flex d-lg-none">
+    <span class="hlft"><i class="fa fa-shopping-cart jsmakeshake faa-ring"></i> <span class="bcnt">0</span></span>
+    <span class="hrgh"><span class="bsumm">0</span><sup>uzs</sup></span>
+</a>
+13) для кнопки телеграма добавлен новый класс tg-button d-none d-lg-block
+14) для кнопки каталог d-none d-lg-block бренды оплата и доставка добавил новый класс d-none d-lg-block
+15) убрал полностью старюю меню и создал новый
+<ul id="nav">
+    <li>
+        <a href="#" class="d-flex align-items-center first-menu-item f-main mb-3">
+            <div class="mr-3">
+                <img src="./Allbazar - интернет магазин в Ташкенте_files/e2d7c6ec7d4c859488f3cd91b1031f65.png"
+                    width="30px">
+            </div>
+            <div class="menu-item-text d-flex align-items-center w-100 justify-content-between">
+                <b> Продукты питания</b>
+
+            </div>
+        </a>
+    </li>
+    <li>
+        <a href="#" class="d-flex align-items-center f-main mb-3">
+            <div class="mr-3">
+                <img src="./Allbazar - интернет магазин в Ташкенте_files/tovdetyam.png" width="30px">
+            </div>
+            <div class="menu-item-text d-flex align-items-center w-100 justify-content-between">
+                <b>Товары для детей</b>
+                <i class="fa fa-angle-right"></i>
+            </div>
+        </a>
+        <ul>
+            <li>
+                <a href="#" class="d-flex align-items-center f-main mb-3">
+                    <div class="mr-3">
+                        <img src="./Allbazar - интернет магазин в Ташкенте_files/e2d7c6ec7d4c859488f3cd91b1031f65.png"
+                            width="30px">
+                    </div>
+                    <div class="menu-item-text d-flex align-items-center w-100 justify-content-between">
+                        <b> Продукты питания</b>
+
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="d-flex align-items-center f-main mb-3">
+                    <div class="mr-3">
+                        <img src="./Allbazar - интернет магазин в Ташкенте_files/e2d7c6ec7d4c859488f3cd91b1031f65.png"
+                            width="30px">
+                    </div>
+                    <div class="menu-item-text d-flex align-items-center w-100 justify-content-between">
+                        <b> Продукты питания</b>
+
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="d-flex align-items-center f-main mb-3">
+                    <div class="mr-3">
+                        <img src="./Allbazar - интернет магазин в Ташкенте_files/tovdetyam.png" width="30px">
+                    </div>
+                    <div class="menu-item-text d-flex align-items-center w-100 justify-content-between">
+                        <b>Товары для детей</b>
+                        <i class="fa fa-angle-right"></i>
+                    </div>
+                </a>
+                <ul>
+                    <li>
+                        <a href="#" class="d-flex align-items-center f-main mb-3">
+                            <div class="mr-3">
+                                <img src="./Allbazar - интернет магазин в Ташкенте_files/tovdetyam.png" width="30px">
+                            </div>
+                            <div class="menu-item-text d-flex align-items-center w-100 justify-content-between">
+                                <b>Товары для детей</b>
+
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="d-flex align-items-center f-main mb-3">
+                            <div class="mr-3">
+                                <img src="./Allbazar - интернет магазин в Ташкенте_files/e2d7c6ec7d4c859488f3cd91b1031f65.png"
+                                    width="30px">
+                            </div>
+                            <div class="menu-item-text d-flex align-items-center w-100 justify-content-between">
+                                <b> Продукты питания</b>
+
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="d-flex align-items-center f-main mb-3">
+                            <div class="mr-3">
+                                <img src="./Allbazar - интернет магазин в Ташкенте_files/e2d7c6ec7d4c859488f3cd91b1031f65.png"
+                                    width="30px">
+                            </div>
+                            <div class="menu-item-text d-flex align-items-center w-100 justify-content-between">
+                                <b> Продукты питания</b>
+
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+    <li>
+        <a href="" class="d-flex align-items-center f-main mb-3">
+            <div class="mr-3">
+                <img src="./Allbazar - интернет магазин в Ташкенте_files/d632ec65e8660f81d0c673656cb1263c.png"
+                    width="30px">
+            </div>
+            <div class="menu-item-text d-flex align-items-center w-100 justify-content-between">
+                <b>Лечебное питание</b>
+                <i class="fa fa-angle-right"></i>
+            </div>
+
+        </a>
+        <ul>
+            <li>
+                <a href="" class="d-flex align-items-center f-main mb-3 menu-cat-tag">
+                    <div class="mr-3">
+                        <img src="./Allbazar - интернет магазин в Ташкенте_files/d632ec65e8660f81d0c673656cb1263c.png"
+                            width="30px">
+                    </div>
+                    <div class="menu-item-text d-flex align-items-center w-100 justify-content-between">
+                        <b>Лечебное питание</b>
+                    </div>
+
+                </a>
+            </li>
+            <hr>
+            <li>
+                <a href="#" class="d-flex align-items-center f-main mb-3">
+                    <div class="mr-3">
+                        <img src="./Allbazar - интернет магазин в Ташкенте_files/e2d7c6ec7d4c859488f3cd91b1031f65.png"
+                            width="30px">
+                    </div>
+                    <div class="menu-item-text d-flex align-items-center w-100 justify-content-between">
+                        <b> Продукты питания</b>
+
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </li>
+    <li>
+        <a href="https://allbazar.top/cat-detskiy-mir_i103/" class="d-flex align-items-center f-main mb-3">
+            <div class="mr-3">
+                <img src="./Allbazar - интернет магазин в Ташкенте_files/1e719ae1f03857fae241346cd2045f07.png"
+                    width="30px">
+            </div>
+            <div class="menu-item-text d-flex align-items-center w-100 justify-content-between">
+                <b>Детский мир</b>
+            </div>
+
+        </a>
+    </li>
+    <li>
+        <a href="https://allbazar.top/cat-elektronika_i111/" class="d-flex align-items-center f-main mb-3">
+            <div class="mr-3">
+                <img src="./Allbazar - интернет магазин в Ташкенте_files/191b29886577ae5db1e7f2a440f41a74.png"
+                    width="30px">
+            </div>
+            <div class="menu-item-text d-flex align-items-center w-100 justify-content-between">
+                <b>Электроника</b>
+
+            </div>
+
+        </a>
+    </li>
+    <li>
+        <a href="https://allbazar.top/cat-elektronika_i111/" class="d-flex align-items-center f-main mb-3">
+            <div class="mr-3">
+                <img src="./Allbazar - интернет магазин в Ташкенте_files/191b29886577ae5db1e7f2a440f41a74.png"
+                    width="30px">
+            </div>
+            <div class="menu-item-text d-flex align-items-center w-100 justify-content-between">
+                <b>Электроника</b>
+
+            </div>
+
+        </a>
+    </li>
+    <li>
+        <a href="https://allbazar.top/cat-elektronika_i111/" class="d-flex align-items-center f-main mb-3">
+            <div class="mr-3">
+                <img src="./Allbazar - интернет магазин в Ташкенте_files/a7e049b8d65f0dde5edec25cb19f88fc.png"
+                    width="30px">
+            </div>
+            <div class="menu-item-text d-flex align-items-center w-100 justify-content-between">
+                <b>Бытовая химия</b>
+
+            </div>
+
+        </a>
+    </li>
+    <li>
+        <a href="#" class="d-flex align-items-center f-main mb-3">
+            <div class="mr-3">
+                <img src="./Allbazar - интернет магазин в Ташкенте_files/f7e0eb0fa80876c14aaf3b1af6df5c71.png"
+                    width="30px">
+            </div>
+            <div class="menu-item-text d-flex align-items-center w-100 justify-content-between">
+                <b>Косметика и гигиена</b>
+                <i class="fa fa-angle-right"></i>
+            </div>
+
+        </a>
+        <ul>
+            <li>
+                <a href="#" class="d-flex align-items-center f-main mb-3 menu-cat-tag">
+                    <div class="mr-3">
+                        <img src="./Allbazar - интернет магазин в Ташкенте_files/f7e0eb0fa80876c14aaf3b1af6df5c71.png"
+                            width="30px">
+                    </div>
+                    <div class="menu-item-text d-flex align-items-center w-100 justify-content-between">
+                        <b>Косметика и гигиена</b>
+                    </div>
+
+                </a>
+            </li>
+            <hr>
+            <li>
+                <a href="#" class="d-flex align-items-center f-main mb-3">
+                    <div class="mr-3">
+                        <img src="./Allbazar - интернет магазин в Ташкенте_files/e2d7c6ec7d4c859488f3cd91b1031f65.png"
+                            width="30px">
+                    </div>
+                    <div class="menu-item-text d-flex align-items-center w-100 justify-content-between">
+                        <b> Продукты питания</b>
+
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </li>
+</ul>
+</div>
+16)для блока с контента добавилл класс col-12 col-lg-8
+17) для кнопки поиска добавил класс col-lg-3 col-12
+18) для кнопки меню в десктопе добавил класс d-none d-lg-block
+19) после блока меню добавил новый блок лдя моб меню
+<a href="#" class="d-block d-lg-none py-2 mr-3 cursor-pointer mobile-menu"><i class="fa fa-bars"></i></a>
+20) Убрал блок бренды в header
+21) поменял иконку блока Олпата и доставка
+22)поменял цвет текста на черный
+23) добавил класс для блока категорий col-md-3
+24) убрал кнопку телеграм и наш слоган переместил оплата и доставка в хедер
+25) добавил моб меню
+<div class="mobile_menu_container">
+    <div class="mobile_menu_content">
+        <ul>
+            <li>
+                <a href="#" class="d-flex align-items-center f-main parent ">
+                    <div class="mr-3">
+                        <img src="./Allbazar - интернет магазин в Ташкенте_files/e2d7c6ec7d4c859488f3cd91b1031f65.png"
+                            width="30px">
+                    </div>
+                    <div class="menu-item-text d-flex align-items-center w-100 justify-content-between">
+                        <b> Продукты питания</b>
+                        <i class="fa fa-angle-right"></i>
+                    </div>
+                </a>
+                <ul>
+                    <li> <i class="fa fa-angle-left"></i><a href="#" class="d-flex align-items-center f-main back ">
+
+                            <div class="menu-item-text d-flex align-items-center w-100 justify-content-between">
+
+                                <b> Продукты питания</b>
+
+                            </div>
+                        </a></li>
+                    <hr>
+                    <li><a href="#" class="d-flex align-items-center f-main  ">
+                            <div class="mr-3">
+                                <img src="./Allbazar - интернет магазин в Ташкенте_files/f7e0eb0fa80876c14aaf3b1af6df5c71.png"
+                                    width="30px">
+                            </div>
+                            <div class="menu-item-text d-flex align-items-center w-100 justify-content-between">
+                                <b>Косметика и гигиена</b>
+                            </div>
+
+                        </a></li>
+                    <li> <a href="#" class="d-flex align-items-center f-main">
+                            <div class="mr-3">
+                                <img src="./Allbazar - интернет магазин в Ташкенте_files/191b29886577ae5db1e7f2a440f41a74.png"
+                                    width="30px">
+                            </div>
+                            <div class="menu-item-text d-flex align-items-center w-100 justify-content-between">
+                                <b>Электроника</b>
+
+                            </div>
+
+                        </a></li>
+                    <li>
+                        <a href="#" class="d-flex align-items-center f-main parent">
+                            <div class="mr-3">
+                                <img src="./Allbazar - интернет магазин в Ташкенте_files/191b29886577ae5db1e7f2a440f41a74.png"
+                                    width="30px">
+                            </div>
+                            <div class="menu-item-text d-flex align-items-center w-100 justify-content-between">
+                                <b>Электроника</b>
+                                <i class="fa fa-angle-right"></i>
+                            </div>
+
+                        </a>
+                        <ul>
+                            <li><i class="fa fa-angle-left"></i><a href="#"
+                                    class="d-flex align-items-center f-main back">
+
+                                    <div class="menu-item-text d-flex align-items-center w-100 justify-content-between">
+                                        <b>Электроника</b>
+                                    </div>
+
+                                </a></li>
+                            <hr>
+                            <li><a href="#" class="d-flex align-items-center f-main  ">
+                                    <div class="mr-3">
+                                        <img src="./Allbazar - интернет магазин в Ташкенте_files/f7e0eb0fa80876c14aaf3b1af6df5c71.png"
+                                            width="30px">
+                                    </div>
+                                    <div class="menu-item-text d-flex align-items-center w-100 justify-content-between">
+                                        <b>Косметика и гигиена</b>
+                                    </div>
+
+                                </a></li>
+                            <li> <a href="#" class="d-flex align-items-center f-main ">
+                                    <div class="mr-3">
+                                        <img src="./Allbazar - интернет магазин в Ташкенте_files/e2d7c6ec7d4c859488f3cd91b1031f65.png"
+                                            width="30px">
+                                    </div>
+                                    <div class="menu-item-text d-flex align-items-center w-100 justify-content-between">
+                                        <b> Продукты питания</b>
+
+                                    </div>
+                                </a></li>
+                            <li><a href="#" class="d-flex align-items-center f-main ">
+                                    <div class="mr-3">
+                                        <img src="./Allbazar - интернет магазин в Ташкенте_files/a7e049b8d65f0dde5edec25cb19f88fc.png"
+                                            width="30px">
+                                    </div>
+                                    <div class="menu-item-text d-flex align-items-center w-100 justify-content-between">
+                                        <b>Бытовая химия</b>
+
+                                    </div>
+
+                                </a></li>
+                        </ul>
+                    </li>
+                    <li> <a href="#" class="d-flex align-items-center f-main ">
+                            <div class="mr-3">
+                                <img src="./Allbazar - интернет магазин в Ташкенте_files/e2d7c6ec7d4c859488f3cd91b1031f65.png"
+                                    width="30px">
+                            </div>
+                            <div class="menu-item-text d-flex align-items-center w-100 justify-content-between">
+                                <b> Продукты питания</b>
+
+                            </div>
+                        </a></li>
+                    <li><a href="#" class="d-flex align-items-center f-main ">
+                            <div class="mr-3">
+                                <img src="./Allbazar - интернет магазин в Ташкенте_files/a7e049b8d65f0dde5edec25cb19f88fc.png"
+                                    width="30px">
+                            </div>
+                            <div class="menu-item-text d-flex align-items-center w-100 justify-content-between">
+                                <b>Бытовая химия</b>
+
+                            </div>
+
+                        </a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#" class="d-flex align-items-center f-main">
+                    <div class="mr-3">
+                        <img src="./Allbazar - интернет магазин в Ташкенте_files/191b29886577ae5db1e7f2a440f41a74.png"
+                            width="30px">
+                    </div>
+                    <div class="menu-item-text d-flex align-items-center w-100 justify-content-between">
+                        <b>Электроника</b>
+
+                    </div>
+
+                </a>
+            </li>
+            <li>
+                <a href="#" class="d-flex align-items-center f-main ">
+                    <div class="mr-3">
+                        <img src="./Allbazar - интернет магазин в Ташкенте_files/a7e049b8d65f0dde5edec25cb19f88fc.png"
+                            width="30px">
+                    </div>
+                    <div class="menu-item-text d-flex align-items-center w-100 justify-content-between">
+                        <b>Бытовая химия</b>
+
+                    </div>
+
+                </a>
+            </li>
+            <li>
+                <a href="#" class="d-flex align-items-center f-main  ">
+                    <div class="mr-3">
+                        <img src="./Allbazar - интернет магазин в Ташкенте_files/f7e0eb0fa80876c14aaf3b1af6df5c71.png"
+                            width="30px">
+                    </div>
+                    <div class="menu-item-text d-flex align-items-center w-100 justify-content-between">
+                        <b>Косметика и гигиена</b>
+                    </div>
+
+                </a>
+            </li>
+            <li>
+                <a href="#" class="d-flex align-items-center f-main ">
+                    <div class="mr-3">
+                        <img src="./Allbazar - интернет магазин в Ташкенте_files/e2d7c6ec7d4c859488f3cd91b1031f65.png"
+                            width="30px">
+                    </div>
+                    <div class="menu-item-text d-flex align-items-center w-100 justify-content-between">
+                        <b> Продукты питания</b>
+
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="d-flex align-items-center f-main">
+                    <div class="mr-3">
+                        <img src="./Allbazar - интернет магазин в Ташкенте_files/d632ec65e8660f81d0c673656cb1263c.png"
+                            width="30px">
+                    </div>
+                    <div class="menu-item-text d-flex align-items-center w-100 justify-content-between">
+                        <b>Лечебное питание</b>
+                    </div>
+
+                </a>
+            </li>
+            <li>
+                <a href="#" class="d-flex align-items-center f-main parent ">
+                    <div class="mr-3">
+                        <img src="./Allbazar - интернет магазин в Ташкенте_files/e2d7c6ec7d4c859488f3cd91b1031f65.png"
+                            width="30px">
+                    </div>
+                    <div class="menu-item-text d-flex align-items-center w-100 justify-content-between">
+                        <b> Продукты питания</b>
+                        <i class="fa fa-angle-right"></i>
+                    </div>
+                </a>
+                <ul>
+                    <li> <i class="fa fa-angle-left"></i><a href="#" class="d-flex align-items-center f-main back ">
+
+                            <div class="menu-item-text d-flex align-items-center w-100 justify-content-between">
+
+                                <b> Продукты питания</b>
+
+                            </div>
+                        </a></li>
+                    <hr>
+                    <li><a href="#" class="d-flex align-items-center f-main  ">
+                            <div class="mr-3">
+                                <img src="./Allbazar - интернет магазин в Ташкенте_files/f7e0eb0fa80876c14aaf3b1af6df5c71.png"
+                                    width="30px">
+                            </div>
+                            <div class="menu-item-text d-flex align-items-center w-100 justify-content-between">
+                                <b>Косметика и гигиена</b>
+                            </div>
+
+                        </a></li>
+                    <li> <a href="#" class="d-flex align-items-center f-main">
+                            <div class="mr-3">
+                                <img src="./Allbazar - интернет магазин в Ташкенте_files/191b29886577ae5db1e7f2a440f41a74.png"
+                                    width="30px">
+                            </div>
+                            <div class="menu-item-text d-flex align-items-center w-100 justify-content-between">
+                                <b>Электроника</b>
+
+                            </div>
+
+                        </a></li>
+                    <li>
+                        <a href="#" class="d-flex align-items-center f-main parent">
+                            <div class="mr-3">
+                                <img src="./Allbazar - интернет магазин в Ташкенте_files/191b29886577ae5db1e7f2a440f41a74.png"
+                                    width="30px">
+                            </div>
+                            <div class="menu-item-text d-flex align-items-center w-100 justify-content-between">
+                                <b>Электроника</b>
+                                <i class="fa fa-angle-right"></i>
+                            </div>
+
+                        </a>
+                        <ul>
+                            <li><i class="fa fa-angle-left"></i><a href="#"
+                                    class="d-flex align-items-center f-main back">
+
+                                    <div class="menu-item-text d-flex align-items-center w-100 justify-content-between">
+                                        <b>Электроника</b>
+                                    </div>
+
+                                </a></li>
+                            <hr>
+                            <li><a href="#" class="d-flex align-items-center f-main  ">
+                                    <div class="mr-3">
+                                        <img src="./Allbazar - интернет магазин в Ташкенте_files/f7e0eb0fa80876c14aaf3b1af6df5c71.png"
+                                            width="30px">
+                                    </div>
+                                    <div class="menu-item-text d-flex align-items-center w-100 justify-content-between">
+                                        <b>Косметика и гигиена</b>
+                                    </div>
+
+                                </a></li>
+                            <li> <a href="#" class="d-flex align-items-center f-main ">
+                                    <div class="mr-3">
+                                        <img src="./Allbazar - интернет магазин в Ташкенте_files/e2d7c6ec7d4c859488f3cd91b1031f65.png"
+                                            width="30px">
+                                    </div>
+                                    <div class="menu-item-text d-flex align-items-center w-100 justify-content-between">
+                                        <b> Продукты питания</b>
+
+                                    </div>
+                                </a></li>
+                            <li><a href="#" class="d-flex align-items-center f-main ">
+                                    <div class="mr-3">
+                                        <img src="./Allbazar - интернет магазин в Ташкенте_files/a7e049b8d65f0dde5edec25cb19f88fc.png"
+                                            width="30px">
+                                    </div>
+                                    <div class="menu-item-text d-flex align-items-center w-100 justify-content-between">
+                                        <b>Бытовая химия</b>
+
+                                    </div>
+
+                                </a></li>
+                        </ul>
+                    </li>
+                    <li> <a href="#" class="d-flex align-items-center f-main ">
+                            <div class="mr-3">
+                                <img src="./Allbazar - интернет магазин в Ташкенте_files/e2d7c6ec7d4c859488f3cd91b1031f65.png"
+                                    width="30px">
+                            </div>
+                            <div class="menu-item-text d-flex align-items-center w-100 justify-content-between">
+                                <b> Продукты питания</b>
+
+                            </div>
+                        </a></li>
+                    <li><a href="#" class="d-flex align-items-center f-main ">
+                            <div class="mr-3">
+                                <img src="./Allbazar - интернет магазин в Ташкенте_files/a7e049b8d65f0dde5edec25cb19f88fc.png"
+                                    width="30px">
+                            </div>
+                            <div class="menu-item-text d-flex align-items-center w-100 justify-content-between">
+                                <b>Бытовая химия</b>
+
+                            </div>
+
+                        </a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#" class="d-flex align-items-center f-main">
+                    <div class="mr-3">
+                        <img src="./Allbazar - интернет магазин в Ташкенте_files/191b29886577ae5db1e7f2a440f41a74.png"
+                            width="30px">
+                    </div>
+                    <div class="menu-item-text d-flex align-items-center w-100 justify-content-between">
+                        <b>Электроника</b>
+
+                    </div>
+
+                </a>
+            </li>
+            <li>
+                <a href="#" class="d-flex align-items-center f-main ">
+                    <div class="mr-3">
+                        <img src="./Allbazar - интернет магазин в Ташкенте_files/a7e049b8d65f0dde5edec25cb19f88fc.png"
+                            width="30px">
+                    </div>
+                    <div class="menu-item-text d-flex align-items-center w-100 justify-content-between">
+                        <b>Бытовая химия</b>
+
+                    </div>
+
+                </a>
+            </li>
+            <li>
+                <a href="#" class="d-flex align-items-center f-main  ">
+                    <div class="mr-3">
+                        <img src="./Allbazar - интернет магазин в Ташкенте_files/f7e0eb0fa80876c14aaf3b1af6df5c71.png"
+                            width="30px">
+                    </div>
+                    <div class="menu-item-text d-flex align-items-center w-100 justify-content-between">
+                        <b>Косметика и гигиена</b>
+                    </div>
+
+                </a>
+            </li>
+            <li>
+                <a href="#" class="d-flex align-items-center f-main ">
+                    <div class="mr-3">
+                        <img src="./Allbazar - интернет магазин в Ташкенте_files/e2d7c6ec7d4c859488f3cd91b1031f65.png"
+                            width="30px">
+                    </div>
+                    <div class="menu-item-text d-flex align-items-center w-100 justify-content-between">
+                        <b> Продукты питания</b>
+
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="d-flex align-items-center f-main">
+                    <div class="mr-3">
+                        <img src="./Allbazar - интернет магазин в Ташкенте_files/d632ec65e8660f81d0c673656cb1263c.png"
+                            width="30px">
+                    </div>
+                    <div class="menu-item-text d-flex align-items-center w-100 justify-content-between">
+                        <b>Лечебное питание</b>
+                    </div>
+
+                </a>
+            </li>
+
+
+        </ul>
+    </div>
+</div>
+<div class="mobile_menu_overlay"></div>
+26) добавил новый слайдер для баннера
+
+         
+           
+            <div class="swiper-wrapper">
+              
+                <div class="swiper-slide">
+                  <a href="#">
+                    <img src="banner3.jpg" alt="#">
+                  </a>
+                </div>
+              <div class="swiper-slide">
+                <a href="#">
+                  <img src="banner1.jpg" alt="#">
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#">
+                  <img src="banner2.jpg" alt="#">
+                </a>
+              </div> 
+            </div>
+          </div>
+27) изменил класс блока поиск col-lg-7 col-12 и корзины с входом в десктопе col-md-3 col-5
+а также новые фалы подключены new.css и new.js 
